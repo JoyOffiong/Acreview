@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 .button {
   display: flex;
   flex-direction: row;
@@ -13,7 +14,7 @@
 }
 
 .footerWrap__left_h3, .header__logo {
-  font-family: "Helvetica Neue";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -39,7 +40,7 @@
   padding: 0;
   background-color: #FFFBF0;
   box-sizing: border-box;
-  font-family: "Helvetica Neue";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
 }
 * i {
@@ -781,8 +782,8 @@
 }
 @media (min-width: 1200px) {
   .servicesWrap__circle1 {
-    width: 250px;
-    left: 0px;
+    width: 150px;
+    left: 40px;
     top: 65.5px;
     position: absolute;
   }
@@ -812,11 +813,35 @@
   }
 }
 @media (min-width: 1500px) {
+  .servicesWrap__circle1 {
+    width: 250px;
+    left: 0px;
+    top: 65.5px;
+    position: absolute;
+  }
+  .servicesWrap__circle2 {
+    top: 512px;
+    width: 117px;
+    position: absolute;
+    left: 84px;
+  }
+  .servicesWrap__circle3 {
+    width: 51px;
+    left: 499px;
+    top: 531px;
+    position: absolute;
+  }
+  .servicesWrap__circle4 {
+    width: 465px;
+    right: 400px;
+    top: 105.5px;
+    position: absolute;
+  }
   .servicesWrap__right_h3 {
-    font-size: 22px;
+    font-size: 36px;
   }
   .servicesWrap__right_p {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 .platform {
