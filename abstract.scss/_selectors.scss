@@ -1,0 +1,41 @@
+
+%button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 15px ;
+gap: 10px;
+background: $buttoncolor;
+color: $headingColor;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+}
+
+%logo{
+   font-family:$font-family;
+   font-style: normal;
+  font-weight: 700;
+font-size: 30px;
+color: $headingColor;
+line-height: 37px; 
+}
+
+%navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $linksColor;
+        justify-content: space-between;
+}
+
+%paragraphfont{
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.01em;
+color:$paragraphColor ;
+}
+

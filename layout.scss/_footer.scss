@@ -1,0 +1,117 @@
+
+//mobile view
+.footer{
+    background-color: #848B89;
+}
+.footerWrap{
+@include allwrappers;
+    flex-direction: column;
+    align-items: flex-start;
+    &__left{
+        text-align: left;
+
+        &_h3{
+            @extend %logo;
+            color: white;
+            padding-bottom: 5%;
+        }
+        &_p{
+            color: white;
+            font-size: $mobilePtagfont;
+            margin-bottom: 10px;
+        }
+    }
+    &__right{
+        display: flex;
+        width: 100%;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 5%;
+        &_p{
+            line-height: 30px;
+            color: white;
+            font-size: 18px;
+    
+        }
+    }
+   
+}
+.footerLastLine{
+    width: 90%;
+    padding-bottom: 50px;
+    margin: auto;
+    &__p{
+    padding-top: 2%;
+    padding-right: 100px;
+    color: white;
+    font-size: $mobilePtagfont;
+    }
+    
+}
+
+//normal screen
+@media(min-width:768px){
+    .footerWrap{
+
+        flex-direction: row;
+        &__left{
+            width:40%;
+            text-align: left;
+            &_p{
+                color: white;
+                font-size: $laptopPtagfont;
+                margin-bottom: 10px;
+            }
+        }
+        &__right{
+            display: flex;
+            width: 50%;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: flex-start;
+            &_p{
+                line-height: 50px;
+                font-size: $laptopPtagfont;
+            }
+        }
+    }
+}
+
+//large screen
+@media(min-width:1200px){
+    .footerWrap{
+      
+        &__left{
+    
+            &_p{
+                color: white;
+                font-size: $LargeLaptopPtagfont;
+                margin-bottom: 10px;
+            }
+        }
+        &__right{
+            &_p{
+                line-height: 50px;
+                font-size: $LargeLaptopPtagfont;
+            }
+        }
+    }
+}
+
+//larger screens
+@media (min-width:1500px){
+    .footerWrap{
+        &__left{
+    
+            &_p{
+                font-size: $ExtraLargeLaptopPtagfont;
+            }
+        }
+        &__right{
+            &_p{
+                line-height: 50px;
+                font-size: $ExtraLargeLaptopPtagfont;
+            }
+        }
+}}

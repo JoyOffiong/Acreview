@@ -1,0 +1,94 @@
+.courses{
+    background-color: #E5E5E5;
+
+}
+.courseWrap{
+   @include allwrappers;
+    @include displayFlex;
+    flex-direction: column;
+    &__name{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4%;
+        &_heading{
+            @include headingfont;
+            font-size:$mobileHeadingtagfont;
+          
+        }
+        &_p{
+            @extend %paragraphfont;
+            line-height: 50px;
+            font-size: $mobilePtagfont;
+        }
+    }
+}
+
+//tablets
+@media(min-width:500px){
+    .courseWrap{
+        flex-wrap: wrap;
+        flex-direction: row;
+        &__name{
+            width: 45%;
+            &_heading{
+                @include headingfont;
+                font-size: $tabletHeadingtagfont;
+            }
+            &_p{
+                line-height: 40px;
+                font-size:$tabletPtagfont;
+            }
+        }
+    }
+}
+
+//noraml desktop
+@media(min-width:800px){
+    .courseWrap{
+        flex-direction: row;
+        &__name{
+            width: 25%;
+            &_heading{
+                @include headingfont;
+                font-size:$laptopHeadingtagfont;
+            }
+            &_p{
+                line-height: 40px;
+                font-size: $laptopPtagfont;
+            }
+        }
+    }
+}
+
+//Larger Screens
+@media(min-width:1200px){
+    .courseWrap{
+        &__name{
+            &_heading{
+                @include headingfont;
+                font-size:$laptopHeadingtagfont;
+            }
+            &_p{
+                line-height: 40px;
+                font-size: $laptopPtagfont;
+            }
+        }
+    }
+}
+
+//extralarge screens
+@media(min-width:1500px){
+.courseWrap{
+    flex-direction: row;
+    &__name{
+        &_heading{
+            font-size:$ExtraLargeLaptopHeadingtagfont;
+        }
+        &_p{
+            line-height: 40px;
+            font-size:$ExtraLargeLaptopPtagfont;
+        }
+    }
+
+}
+}
