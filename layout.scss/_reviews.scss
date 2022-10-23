@@ -11,7 +11,7 @@
         
        &_h3{
         @include headingfont;
-        width: 50%;
+        width: 100%;
         font-size: $mobileHeadingtagfont;
         margin:auto;
     
@@ -245,23 +245,24 @@
             &_p{
                 width: 70%;
             }
+          }
+         &__reviews{
+            flex-direction: row;
+            flex-direction: wrap;
+           
+        }
+        &__box2{
+            width: 45%;
+          
+        }
+        &__box1{
+           width: 45%;
+        }
+        &__box3{
+            width: 45%
         }
     }
-    __reviews{
-        flex-direction: row;
-        flex-direction: wrap;
-       
-    }
-    __box2{
-        width: 45%;
-      
-    }
-    __box1{
-       width: 45%;
-    }
-    __box3{
-        width: 45%
-    }
+    
 }
 
 //desktop

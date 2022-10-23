@@ -278,7 +278,7 @@
 }
 @media (min-width: 900px) {
   .heroSection__left {
-    top: 200px;
+    top: 150px;
     width: 60%;
   }
 }
@@ -368,7 +368,7 @@
   font-weight: 700;
   letter-spacing: 0.01em;
   padding-bottom: 2%;
-  width: 50%;
+  width: 100%;
   font-size: 20px;
   margin: auto;
 }
@@ -605,17 +605,17 @@
   .reviewsWrap__heading_p {
     width: 70%;
   }
-  __reviews {
+  .reviewsWrap__reviews {
     flex-direction: row;
     flex-direction: wrap;
   }
-  __box2 {
+  .reviewsWrap__box2 {
     width: 45%;
   }
-  __box1 {
+  .reviewsWrap__box1 {
     width: 45%;
   }
-  __box3 {
+  .reviewsWrap__box3 {
     width: 45%;
   }
 }
@@ -691,22 +691,33 @@
   align-items: flex-start;
 }
 .servicesWrap__left {
-  display: none;
+  width: 60%;
+  height: 500px;
+  position: relative;
 }
-.servicesWrap__circle1 {
-  display: none;
+.servicesWrap__left_one {
+  width: 300px;
+  height: 430px;
+  left: 0px;
+  position: absolute;
 }
-.servicesWrap__circle2 {
-  display: none;
+.servicesWrap__left_one img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.servicesWrap__circle3 {
-  display: none;
+.servicesWrap__left_two {
+  width: 300px;
+  height: 430px;
+  position: absolute;
+  left: 0px;
 }
-.servicesWrap__circle4 {
-  display: none;
-}
-.servicesWrap__button {
-  margin: auto;
+.servicesWrap__left_two img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .servicesWrap__right {
   width: 100%;
@@ -721,51 +732,41 @@
   padding-bottom: 20px;
   font-size: 18px;
 }
+.servicesWrap__button {
+  margin: auto;
+}
 
 @media (min-width: 768px) {
   .servicesWrap {
     flex-direction: row;
     padding-top: 10px;
-  }
-  .servicesWrap__circle1 {
-    display: block;
-    width: 200px;
-    left: 90px;
-    top: 50px;
-    position: absolute;
-  }
-  .servicesWrap__circle2 {
-    display: block;
-    top: 320px;
-    width: 100px;
-    position: absolute;
-    left: 100px;
-  }
-  .servicesWrap__circle3 {
-    display: block;
-    width: 30px;
-    right: 520px;
-    top: 400px;
-    position: absolute;
-  }
-  .servicesWrap__circle4 {
-    display: block;
-    width: 350px;
-    right: 450px;
-    top: 90px;
-    position: absolute;
+    align-items: flex-start;
   }
   .servicesWrap__left {
-    display: block;
     width: 60%;
-    text-align: right;
+    position: relative;
   }
-  .servicesWrap__left img {
+  .servicesWrap__left_one {
+    width: 500px;
+    height: 430px;
     position: absolute;
-    z-index: 10;
-    width: 40%;
-    height: 420px;
-    right: 370px;
+  }
+  .servicesWrap__left_one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .servicesWrap__left_two {
+    width: 500px;
+    height: 430px;
+    position: absolute;
+  }
+  .servicesWrap__left_two img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .servicesWrap__right {
     width: 40%;
@@ -785,30 +786,6 @@
   }
 }
 @media (min-width: 1200px) {
-  .servicesWrap__circle1 {
-    width: 150px;
-    left: 40px;
-    top: 65.5px;
-    position: absolute;
-  }
-  .servicesWrap__circle2 {
-    top: 512px;
-    width: 117px;
-    position: absolute;
-    left: 84px;
-  }
-  .servicesWrap__circle3 {
-    width: 51px;
-    left: 499px;
-    top: 531px;
-    position: absolute;
-  }
-  .servicesWrap__circle4 {
-    width: 465px;
-    right: 400px;
-    top: 105.5px;
-    position: absolute;
-  }
   .servicesWrap__right_h3 {
     font-size: 32px;
   }
@@ -817,30 +794,6 @@
   }
 }
 @media (min-width: 1500px) {
-  .servicesWrap__circle1 {
-    width: 250px;
-    left: 0px;
-    top: 65.5px;
-    position: absolute;
-  }
-  .servicesWrap__circle2 {
-    top: 512px;
-    width: 117px;
-    position: absolute;
-    left: 84px;
-  }
-  .servicesWrap__circle3 {
-    width: 51px;
-    left: 499px;
-    top: 531px;
-    position: absolute;
-  }
-  .servicesWrap__circle4 {
-    width: 465px;
-    right: 400px;
-    top: 105.5px;
-    position: absolute;
-  }
   .servicesWrap__right_h3 {
     font-size: 36px;
   }
@@ -863,22 +816,33 @@
   align-items: flex-start;
 }
 .studentPlatform__right {
-  display: none;
+  width: 60%;
+  height: 500px;
+  position: relative;
 }
-.studentPlatform__circle1 {
-  display: none;
+.studentPlatform__right_one {
+  width: 300px;
+  height: 430px;
+  left: 50px;
+  position: absolute;
 }
-.studentPlatform__circle2 {
-  display: none;
+.studentPlatform__right_one img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.studentPlatform__circle3 {
-  display: none;
+.studentPlatform__right_two {
+  width: 300px;
+  height: 430px;
+  position: absolute;
+  left: 50px;
 }
-.studentPlatform__circle4 {
-  display: none;
-}
-.studentPlatform__circle5 {
-  display: none;
+.studentPlatform__right_two img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .studentPlatform__button {
   margin: auto;
@@ -890,11 +854,11 @@
 .studentPlatform__left_h3 {
   color: #332700;
   padding-bottom: 20px;
-  font-size: mobileHeadingtagfont;
+  font-size: 20px;
 }
 .studentPlatform__left_p {
   padding-bottom: 20px;
-  font-size: mobilePtagfont;
+  font-size: 18px;
 }
 
 .studentPlatform2 {
@@ -911,6 +875,7 @@
   font-weight: 700;
   letter-spacing: 0.01em;
   padding-bottom: 2%;
+  font-size: 20px;
 }
 .studentPlatform2__boxes {
   width: 85%;
@@ -984,54 +949,33 @@
     padding-top: 10px;
     padding-bottom: 100px;
   }
-  .studentPlatform__circle1 {
-    display: block;
-    width: 360px;
-    left: 500px;
-    top: 150px;
-    z-index: 2;
-    position: absolute;
-  }
-  .studentPlatform__circle2 {
-    display: block;
-    top: 350px;
-    width: 220px;
-    position: absolute;
-    right: 20px;
-  }
-  .studentPlatform__circle3 {
-    display: block;
-    width: 30px;
-    left: 570px;
-    top: 470px;
-    position: absolute;
-  }
-  .studentPlatform__circle4 {
-    display: block;
-    width: 70px;
-    right: 90px;
-    top: 160px;
-    position: absolute;
-  }
-  .studentPlatform__circle5 {
-    display: block;
-    width: 45px;
-    left: 530px;
-    top: 150px;
-    position: absolute;
-  }
   .studentPlatform__right {
-    display: block;
     width: 60%;
-    text-align: right;
+    height: 500px;
+    position: relative;
   }
-  .studentPlatform__right img {
+  .studentPlatform__right_one {
+    width: 400px;
+    height: 430px;
     position: absolute;
-    z-index: 10;
-    width: 380px;
-    height: 520px;
-    left: 515px;
-    bottom: 80px;
+  }
+  .studentPlatform__right_one img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .studentPlatform__right_two {
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    top: 50px;
+  }
+  .studentPlatform__right_two img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .studentPlatform__left {
     width: 40%;
@@ -1066,37 +1010,15 @@
     font-size: 18px;
   }
 }
+@media (min-width: 900px) {
+  .studentPlatform__right_one {
+    right: 100px;
+  }
+  .studentPlatform__right_two {
+    right: 100px;
+  }
+}
 @media (min-width: 1200px) {
-  .studentPlatform__circle1 {
-    width: 250px;
-    left: 0px;
-    top: 65.5px;
-    position: absolute;
-  }
-  .studentPlatform__circle4 {
-    top: 482px;
-    width: 52px;
-    position: absolute;
-    left: 554px;
-  }
-  .studentPlatform__circle3 {
-    width: 113px;
-    right: 13px;
-    top: 0px;
-    position: absolute;
-  }
-  .studentPlatform__circle2 {
-    width: 263px;
-    right: 0px;
-    top: 353px;
-    position: absolute;
-  }
-  .studentPlatform__circle5 {
-    width: 52px;
-    right: 400px;
-    top: 60px;
-    position: absolute;
-  }
   .studentPlatform__right_h3 {
     font-size: 32px;
   }
