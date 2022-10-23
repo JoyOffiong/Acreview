@@ -14,7 +14,7 @@
 }
 
 .footerWrap__left_h3, .header__logo {
-  font-family: "Rubik", sans-serif;
+  font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -40,7 +40,7 @@
   padding: 0;
   background-color: #FFFBF0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Helvetica Neue";
   font-style: normal;
 }
 * i {
