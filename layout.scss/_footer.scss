@@ -20,6 +20,10 @@
             font-size: $mobilePtagfont;
             margin-bottom: 10px;
         }
+        &_socialmedia{
+            align-items: center;
+            margin-bottom: 10px;
+        }
     }
     &__right{
         display: flex;
@@ -31,7 +35,7 @@
         &_p{
             line-height: 30px;
             color: white;
-            font-size: 18px;
+            font-size: 15px;
     
         }
     }
@@ -62,6 +66,9 @@
                 color: white;
                 font-size: $laptopPtagfont;
                 margin-bottom: 10px;
+            }
+            &_socialmedia{
+                align-items: left;
             }
         }
         &__right{

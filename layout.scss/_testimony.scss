@@ -16,19 +16,20 @@
                 object-fit: contain;
             }
         }
-    }
-    __right{
-        width: 100%;
-        text-align: center;
-        &_text{
-            font-size: 15px;
-           
+        &__right{
+            width: 100%;
+            text-align: center;
+            &_text{
+                font-size: 15px;
+               
+            }
+            &_name{
+                padding-top: 20px;
+                font-size: 30px; 
+            }
         }
-        &_name{
-            padding-top: 20px;
-            font-size: 30px; 
-        }
     }
+   
 
 
 

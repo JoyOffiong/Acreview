@@ -207,7 +207,7 @@
 }
 .heroSection__left_leftText {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.01em;
@@ -369,13 +369,14 @@
   letter-spacing: 0.01em;
   padding-bottom: 2%;
   width: 50%;
+  font-size: 20px;
   margin: auto;
 }
 .reviewsWrap__heading_p {
-  width: 70%;
+  width: 100%;
   margin: auto;
   padding-bottom: 2%;
-  font-size: 15px;
+  font-size: 18px;
 }
 .reviewsWrap__inputwrap {
   width: 100%;
@@ -601,6 +602,9 @@
 }
 
 @media (min-width: 600px) {
+  .reviewsWrap__heading_p {
+    width: 70%;
+  }
   __reviews {
     flex-direction: row;
     flex-direction: wrap;
@@ -711,11 +715,11 @@
 .servicesWrap__right_h3 {
   color: #332700;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .servicesWrap__right_p {
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {
@@ -886,11 +890,11 @@
 .studentPlatform__left_h3 {
   color: #332700;
   padding-bottom: 20px;
-  font-size: 24px;
+  font-size: mobileHeadingtagfont;
 }
 .studentPlatform__left_p {
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: mobilePtagfont;
 }
 
 .studentPlatform2 {
@@ -938,11 +942,11 @@
 }
 .studentPlatform2__boxes_box__p {
   padding-bottom: 12px;
-  font-size: 18px;
+  font-size: 20px;
   color: rgba(71, 60, 24, 0.85);
 }
 .studentPlatform2__boxes_box__p2 {
-  font-size: 15px;
+  font-size: 18px;
 }
 .studentPlatform2__boxes_box2 {
   box-shadow: 4px 4px 20px rgba(79, 146, 182, 0.7);
@@ -967,11 +971,11 @@
 }
 .studentPlatform2__boxes_box2__p {
   padding-bottom: 12px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 .studentPlatform2__boxes_box2__p2 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 @media (min-width: 800px) {
@@ -1056,10 +1060,10 @@
     width: 22%;
   }
   .studentPlatform2__p {
-    font-size: 20px;
+    font-size: 22px;
   }
   .studentPlatform2__p2 {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
@@ -1132,15 +1136,14 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-__right {
+.testimony__right {
   width: 100%;
   text-align: center;
 }
-__right_text {
+.testimony__right_text {
   font-size: 15px;
 }
-__right_name {
+.testimony__right_name {
   padding-top: 20px;
   font-size: 30px;
 }
@@ -1209,11 +1212,11 @@ __right_name {
   font-weight: 700;
   letter-spacing: 0.01em;
   padding-bottom: 2%;
-  font-size: 18px;
+  font-size: 20px;
 }
 .courseWrap__name_p {
   line-height: 50px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 @media (min-width: 500px) {
@@ -1229,11 +1232,11 @@ __right_name {
     font-weight: 700;
     letter-spacing: 0.01em;
     padding-bottom: 2%;
-    font-size: 20px;
+    font-size: 22px;
   }
   .courseWrap__name_p {
     line-height: 40px;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 @media (min-width: 800px) {
@@ -1302,7 +1305,11 @@ __right_name {
 }
 .footerWrap__left_p {
   color: white;
-  font-size: 15px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerWrap__left_socialmedia {
+  align-items: center;
   margin-bottom: 10px;
 }
 .footerWrap__right {
@@ -1316,7 +1323,7 @@ __right_name {
 .footerWrap__right_p {
   line-height: 30px;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .footerLastLine {
@@ -1328,7 +1335,7 @@ __right_name {
   padding-top: 2%;
   padding-right: 100px;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {
@@ -1343,6 +1350,9 @@ __right_name {
     color: white;
     font-size: 18px;
     margin-bottom: 10px;
+  }
+  .footerWrap__left_socialmedia {
+    align-items: left;
   }
   .footerWrap__right {
     display: flex;
