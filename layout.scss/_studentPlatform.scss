@@ -44,6 +44,7 @@
        
         &_h3{
           color:   $headingColor;
+          text-align: center;
          padding-bottom: 20px;
         font-size: $mobileHeadingtagfont;
         }
@@ -63,6 +64,7 @@
     padding-bottom:2%;
     &_h3{
           @include headingfont;
+          text-align: center;
         font-size: $mobileHeadingtagfont;
     }
    }

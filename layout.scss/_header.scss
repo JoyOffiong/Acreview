@@ -1,12 +1,6 @@
 .header{
-    background-color: transparent;
-    display: flex;
-    padding: 10px 0 10px 50px ;
-    justify-content:space-between;
-    position: fixed;
-    width: 100%;
-    align-items:center;
-    z-index: 400;
+   
+    display: none;
     &__logo{
       width: 20%;
       @extend %logo;
@@ -15,20 +9,52 @@
     &__navwrap{
       display: none;
     }
-    &__button{
-      display: block;
-    }
+ 
+  }
+
+  .mobileheader{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    &__logo {
+      width: 20%;
+      &_h3{
+        font-size: 32px;
+      }
+     }
+  }
+  .mobileheader button{
+    background-color:transparent;
+    border: none;
+    padding: 20px;
+    right:0;
+  }
+  .mobileheader button i{
+    font-size: 20px;
+   }
+  .mobileNav button{
+    background-color:transparent;
+    border: none;
+    padding: 20px;
+    padding-left: 50px;
+  }
+  .mobileNav button i{
+   font-size: 20px;
   }
     //mobile view
 .mobileNav{
   position: absolute;
-  z-index: 20;
+  z-index: 10;
   right: 0;
   top: 0px;
   text-align: center;
   padding-top: 6%;
   height: 100vh;
-  width: 30%;
+  width:40%;
   line-height: 3rem;
   transform: translateX(100%);
   display: block;
@@ -56,31 +82,45 @@
   .mobileNav {
     display: none;
   }
+  .mobileheader {
+    display: none;
+  }
   .header {
+    position: fixed;
+    width: 85%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 400;
+    padding: 10px 50px 10px 100px ;
     
-    padding: 10px 0 10px 100px ;
     &__logo {
       width: 20%;
       &_h3{
         font-size: 24px;
       }
     }
-   
-    &__icons{
-      display: none;
-  }
     
       &__navwrap{
-      display: block;
+      display: flex;
         width: 40%;
-        padding-right: 120px;
        right: 0;
+       &_icons{
+        display: none;
+    }
         &_ul{
           width: 100%;
         display:flex;
         justify-content: space-between;
         align-items: center;
 
+    }
+    &_ul button{
+      background-color: $buttoncolor;
+      border: none;
+      width: 60px;
+      border-radius: 10px;
+      height: 30px;
     }
       }
       &__navwrap li{
@@ -90,13 +130,7 @@
         @include a-tags; 
         font-size: 15px;
       }
-      &__navwrap button{
-        background-color: $buttoncolor;
-        border: none;
-        width: 60px;
-        border-radius: 10px;
-        height: 30px;
-      }
+      
     }}
   
 @media(min-width:1200px){

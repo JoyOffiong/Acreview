@@ -1,15 +1,18 @@
-let menuBar=document.querySelector('.header__button_navtoggle1'),
-    closeBar=document.querySelector('.header__button_navtoggle2'),
-    navBar=document.querySelector('.mobileNav');
+const  menuBar=document.querySelector('.mobileheader__icons_navtoggle1');
+const  closeBar=document.querySelector('.mobileNav__navtoggle2');
+const  navBar=document.querySelector('.mobileNav');
     // mainBody=document.getElementById('bodywrap')
 
     menuBar.addEventListener('click', () =>{
- if( menuBar.style.display ='none'){
-    navBar.style.display='block'
-    closeBar.style.display='block'
- }
+   menuBar.style.display ="none"
+   closeBar.style.display='block'
+   closeBar.style.zIndex= '5'
+    navBar.style.transform= 'translateX(0%)' 
+ });
+
+closeBar.addEventListener('click', () =>{
+   menuBar.style.right = "-50px"
    menuBar.style.display='block'
    closeBar.style.display='none'
-   navBar.style.display='block'
-}
-    )
+   navBar.style.transform= 'translateX(100%)' 
+})
