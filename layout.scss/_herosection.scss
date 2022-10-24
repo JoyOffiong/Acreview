@@ -26,7 +26,6 @@
                 letter-spacing: 0.01em;
                 color:$paragraphColor ;
                 margin-bottom: 20px;
-                font-size:24px;
              } 
             
              &_onlineStore img{
@@ -88,13 +87,10 @@
                 }  
             }
             &__blur{
-                // background: linear-gradient(92.02deg, #FFFBF0 4.21%, rgba(196, 196, 196, 0) 103.05%); 
                 background: linear-gradient(92.02deg, #FFFBF0 45.21%, rgba(196, 196, 196, 0) 103.05%); 
                 height: 100vh; 
                 position: absolute;
-                // background-color: red;
                 width: 100%;
-                // right: 30px;
                     z-index: 3;           }
                     
             
@@ -109,37 +105,6 @@
         
             }}
 
-    //  @media(min-width:830px){
-    //     .heroSection{
-
-    //         flex-direction: row;
-    //         &__left{
-    //             // width: 50%;
-    //             position: absolute;
-    //             top: 180px;
-    //              text-align: left;
-    //              padding-left: 100px;
-    //              z-index: 1;
-    //             // margin: auto;
-    //             text-align:left;
-    //             z-index: 1;
-    //             &_leftTitle{
-    //                width: 70%;
-
-    //             }
-    //             &_leftText{
-    //                 width: 80%;
-    //                 text-align: left;
-    //                 font-size: 18px;
-    //             }
-    //         }
-    //         &__right{
-    //             width:70%;
-    //         }
-                
-    //     } 
- 
-    // }
  @media(min-width:1200px){
    
     .heroSection{
@@ -161,7 +126,7 @@
             } 
            
             &_onlineStore img{
-                height: 90px;
+                height: 80px;
 
             }
         }
