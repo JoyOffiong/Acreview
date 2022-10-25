@@ -155,8 +155,10 @@
 @media(min-width:1500px){
     .heroSection{   
         &__left{
+            padding-left: 10%;
             &_leftTitle{
-                width: 40%;
+                padding-top: 50px;
+                width: 55%;
                 font-size: 72px;
                 padding-bottom: 29px;
                 color:$headingColor
@@ -164,8 +166,9 @@
             } 
     
             &_leftText{
-               width: 50%;
-               font-size:24px;
+               width: 70%;
+               font-size:32px;
+               line-height: 30px;
             } 
            
             &_store{

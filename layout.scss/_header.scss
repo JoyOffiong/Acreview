@@ -22,9 +22,7 @@
     padding: 10px 30px;
     &__logo {
       width: 20%;
-      &_h3{
-        font-size: 32px;
-      }
+      @extend %logo;
      }
   }
   .mobileheader button{
@@ -140,10 +138,21 @@
 @media(min-width:1200px){
   .header { 
     &__logo {
+      @extend %logo;
       &_h3{
         font-size: 40px;
       }
 
+    }
+    &__navwrap{
+      &_ul button{
+        background-color: $buttoncolor;
+        border: none;
+        width: 100px;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 20px
+      }
     }
     &__navwrap a{
       @include a-tags; 
@@ -156,6 +165,7 @@
 @media(min-width:1500px){
   .header { 
     &__logo {
+
       &_h3{
         font-size: 50px;
       }
@@ -163,7 +173,8 @@
     }
     &__navwrap a{
       @include a-tags; 
-      font-size: 35px;
+      font-size: 25px;
     }
+  
   }
 }

@@ -13,6 +13,21 @@ border-radius: 5px;
 border: none;
 }
 
+%largeScreensButton{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 15px ;
+gap: 10px;
+font-size: 30px;
+background: $buttoncolor;
+color: $headingColor;
+font-weight: bold;
+border-radius: 5px;
+border: none;
+}
+
 %logo{
    font-family:$font-family;
    font-style: normal;

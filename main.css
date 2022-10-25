@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 .mobileNav li button, .button {
   display: flex;
   flex-direction: row;
@@ -13,8 +12,8 @@
   border: none;
 }
 
-.footerWrap__left_h3, .header__logo {
-  font-family: "Helvetica Neue";
+.footerWrap__left_h3, .mobileheader__logo, .header__logo {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -40,7 +39,7 @@
   padding: 0;
   background-color: #FFFBF0;
   box-sizing: border-box;
-  font-family: "Helvetica Neue";
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
 }
 * i {
@@ -69,9 +68,6 @@
 }
 .mobileheader__logo {
   width: 20%;
-}
-.mobileheader__logo_h3 {
-  font-size: 32px;
 }
 
 .mobileheader button {
@@ -185,6 +181,14 @@
   .header__logo_h3 {
     font-size: 40px;
   }
+  .header__navwrap_ul button {
+    background-color: #FFCC54;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+  }
   .header__navwrap a {
     color: rgba(138, 106, 0, 0.9);
     text-decoration: none;
@@ -200,7 +204,7 @@
     color: rgba(138, 106, 0, 0.9);
     text-decoration: none;
     font-size: 13px;
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 .heroSection {
@@ -336,15 +340,20 @@
   }
 }
 @media (min-width: 1500px) {
+  .heroSection__left {
+    padding-left: 10%;
+  }
   .heroSection__left_leftTitle {
-    width: 40%;
+    padding-top: 50px;
+    width: 55%;
     font-size: 72px;
     padding-bottom: 29px;
     color: #332700;
   }
   .heroSection__left_leftText {
-    width: 50%;
-    font-size: 24px;
+    width: 70%;
+    font-size: 32px;
+    line-height: 30px;
   }
   .heroSection__left_store {
     width: 20px;
@@ -815,6 +824,9 @@
   .servicesWrap__right_p {
     font-size: 20px;
   }
+  .servicesWrap__button {
+    font-size: 25px;
+  }
 }
 @media (min-width: 1500px) {
   .servicesWrap__right_h3 {
@@ -872,11 +884,9 @@
 }
 .studentPlatform__left {
   width: 100%;
-  text-align: center;
 }
 .studentPlatform__left_h3 {
   color: #332700;
-  text-align: center;
   padding-bottom: 20px;
   font-size: 20px;
 }
@@ -906,12 +916,8 @@
   text-align: center;
   font-size: 20px;
 }
-.studentPlatform2__heading_icon {
-  width: 25px;
-  height: 25px;
-  padding-top: 2px;
-  border: 1px solid black;
-  border-radius: 50%;
+.studentPlatform2__heading_icon img {
+  padding-right: 40px;
 }
 .studentPlatform2__boxes {
   width: 85%;
@@ -954,7 +960,7 @@
   border-radius: 18.8556px;
   border-radius: 10px;
   width: 100%;
-  padding: 30px 30px;
+  padding: 50px 30px;
   margin-bottom: 5%;
   text-align: center;
   background: rgba(79, 146, 182, 0.95);
@@ -1005,9 +1011,22 @@
     width: 400px;
     height: 430px;
     position: absolute;
-    top: 50px;
+    left: 200px;
   }
   .studentPlatform__right_two img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .studentPlatform__right_three {
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    top: 250px;
+    right: 0;
+  }
+  .studentPlatform__right_three img {
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
@@ -1034,10 +1053,10 @@
     flex-direction: row;
   }
   .studentPlatform2__boxes_box {
-    width: 22%;
+    width: 27%;
   }
   .studentPlatform2__boxes_box2 {
-    width: 22%;
+    width: 27%;
   }
   .studentPlatform2__p {
     font-size: 22px;
@@ -1055,19 +1074,56 @@
   }
 }
 @media (min-width: 1200px) {
-  .studentPlatform__right_h3 {
+  .studentPlatform__left_h3 {
     font-size: 32px;
   }
-  .studentPlatform__right_p {
+  .studentPlatform__left_p {
+    font-size: 20px;
+  }
+  .studentPlatform__right {
+    width: 60%;
+    height: 500px;
+    position: relative;
+  }
+  .studentPlatform__right_one {
+    width: 500px;
+    height: 530px;
+    position: absolute;
+    left: 200px;
+  }
+  .studentPlatform__right_two {
+    width: 650px;
+    height: 530px;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+  }
+  .studentPlatform__right_three {
+    width: 500px;
+    height: 530px;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+  }
+  .studentPlatform2__heading_h3 {
     font-size: 20px;
   }
   .studentPlatform2__boxes_box {
-    width: 26%;
     margin-bottom: 5%;
   }
   .studentPlatform2__boxes_box2 {
-    width: 26%;
     margin-bottom: 5%;
+  }
+}
+@media (min-width: 1500px) {
+  .studentPlatform__left_h3 {
+    font-size: 36px;
+  }
+  .studentPlatform__left_p {
+    font-size: 24px;
+  }
+  .studentPlatform2__heading_h3 {
+    font-size: 36px;
   }
 }
 .testimonyWrap {
