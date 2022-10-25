@@ -32,6 +32,11 @@
             height: 100%;
             object-fit: contain;
         }
+        &_three{
+            display: none;
+            
+           
+        }
     }
 
  &__button{
@@ -43,6 +48,7 @@
        
         &_h3{
           color:   $headingColor;
+          text-align: center;
          padding-bottom: 20px;
         font-size: $mobileHeadingtagfont;
         }
@@ -69,11 +75,10 @@
           text-align: center;
         font-size: $mobileHeadingtagfont;
     }
+    
     &_icon img{
-        padding-right: 40px;
+       display: none;
     }
-  
-   }
  
    &__boxes{
     width: 85%;
@@ -144,7 +149,7 @@
 
 
 }
-
+}
 
     @media(min-width:800px){
         .studentPlatform{
@@ -213,7 +218,12 @@
         
         }
         .studentPlatform2{
-    
+    &__heading{
+            &_icon img{
+                padding-right: 40px;
+            }
+        
+    }
         &__boxes{
             flex-direction: row;
             &_box{

@@ -22,7 +22,8 @@
     padding: 10px 30px;
     &__logo {
       width: 20%;
-      @extend %logo;
+      font-size: 20px;
+      color: $headingColor;
      }
   }
   .mobileheader button{
