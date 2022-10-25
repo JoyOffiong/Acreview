@@ -8,7 +8,7 @@ const mainBody=document.getElementById('bodywrap')
    closeBar.style.display='block'
    closeBar.style.zIndex= '5'
     navBar.style.transform= 'translateX(0%)' 
-    mainBody.style.overflow='hidden'
+    mainBody.style.overflowX='hidden'
  });
 
 closeBar.addEventListener('click', () =>{
