@@ -925,7 +925,7 @@
 .studentPlatform2__heading_icon img {
   display: none;
 }
-.studentPlatform2__heading__boxes {
+.studentPlatform2__boxes {
   width: 85%;
   margin: auto;
   display: flex;
@@ -933,7 +933,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.studentPlatform2__heading__boxes_box {
+.studentPlatform2__boxes_box {
   background: rgba(254, 227, 207, 0.5);
   box-shadow: 4px 4px 10px #FFEFDF;
   border-radius: 18.8556px;
@@ -943,25 +943,25 @@
   margin-bottom: 5%;
   text-align: center;
 }
-.studentPlatform2__heading__boxes_box__image {
+.studentPlatform2__boxes_box__image {
   margin-bottom: 10px;
   height: 100px;
 }
-.studentPlatform2__heading__boxes_box__image img {
+.studentPlatform2__boxes_box__image img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.studentPlatform2__heading__boxes_box__p {
+.studentPlatform2__boxes_box__p {
   padding-bottom: 12px;
   font-size: 20px;
   color: rgba(71, 60, 24, 0.85);
 }
-.studentPlatform2__heading__boxes_box__p2 {
+.studentPlatform2__boxes_box__p2 {
   font-size: 18px;
 }
-.studentPlatform2__heading__boxes_box2 {
+.studentPlatform2__boxes_box2 {
   box-shadow: 4px 4px 20px rgba(79, 146, 182, 0.7);
   border-radius: 18.8556px;
   border-radius: 10px;
@@ -972,22 +972,22 @@
   background: rgba(79, 146, 182, 0.95);
   color: white;
 }
-.studentPlatform2__heading__boxes_box2__image {
+.studentPlatform2__boxes_box2__image {
   margin-bottom: 10px;
   height: 100px;
 }
-.studentPlatform2__heading__boxes_box2__image img {
+.studentPlatform2__boxes_box2__image img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.studentPlatform2__heading__boxes_box2__p {
+.studentPlatform2__boxes_box2__p {
   padding-bottom: 12px;
   font-size: 20px;
   color: white;
 }
-.studentPlatform2__heading__boxes_box2__p2 {
+.studentPlatform2__boxes_box2__p2 {
   font-size: 18px;
 }
 

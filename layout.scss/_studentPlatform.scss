@@ -79,7 +79,7 @@
     &_icon img{
        display: none;
     }
- 
+}
    &__boxes{
     width: 85%;
     margin: auto;
@@ -146,10 +146,8 @@
    
 }
 
-
-
 }
-}
+
 
     @media(min-width:800px){
         .studentPlatform{
