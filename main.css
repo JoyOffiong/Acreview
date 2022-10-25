@@ -1210,6 +1210,11 @@
     font-size: 22px;
   }
 }
+.ellipses {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .courses {
   background-color: #E5E5E5;
 }
@@ -1329,11 +1334,11 @@
 .footerWrap__left_p {
   color: white;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .footerWrap__left_socialmedia {
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .footerWrap__left_socialmedia i {
   color: white;
@@ -1397,7 +1402,7 @@
   .footerWrap__left_p {
     color: white;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   .footerWrap__right_p {
     line-height: 50px;
