@@ -58,8 +58,12 @@
 .studentPlatform2{
     width: 90%;
     margin: auto;
+    text-align: center;
     padding: 20px 0;
    &__heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-left: 7%;
     padding-bottom:2%;
     &_h3{
@@ -67,7 +71,15 @@
           text-align: center;
         font-size: $mobileHeadingtagfont;
     }
+    &_icon{
+        width: 25px;
+        height: 25px;
+        padding-top: 2px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
    }
+ 
    &__boxes{
     width: 85%;
     margin: auto;

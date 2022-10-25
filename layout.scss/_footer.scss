@@ -3,6 +3,7 @@
 .footer{
     background-color: #848B89;
 }
+
 .footerWrap{
 @include allwrappers;
     flex-direction: column;
@@ -23,6 +24,10 @@
         &_socialmedia{
             align-items: center;
             margin-bottom: 10px;
+        }
+        &_socialmedia i{
+            color: white;
+            padding-left: 10px;
         }
     }
     &__right{
