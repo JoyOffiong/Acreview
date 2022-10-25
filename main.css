@@ -62,7 +62,7 @@
   display: flex;
   position: fixed;
   z-index: 10;
-  width: 60%;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
@@ -85,11 +85,14 @@
   font-size: 20px;
 }
 
-.mobileNav button {
+.mobileNav__navtoggle2 {
   background-color: transparent;
   border: none;
   padding: 20px;
-  padding-left: 50px;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .mobileNav button i {
@@ -102,13 +105,12 @@
   right: 0;
   top: 0px;
   text-align: center;
-  padding-top: 6%;
+  padding-top: 20%;
   height: 100vh;
   width: 40%;
   line-height: 3rem;
-  transform: translateX(100%);
-  display: block;
-  transition: 350ms ease;
+  display: none;
+  transition: 100s ease;
   background-color: rgb(248, 246, 246);
 }
 

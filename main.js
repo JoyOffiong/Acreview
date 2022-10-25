@@ -7,7 +7,7 @@ const mainBody=document.getElementById('bodywrap')
    menuBar.style.display ="none"
    closeBar.style.display='block'
    closeBar.style.zIndex= '5'
-    navBar.style.transform= 'translateX(0%)' 
+    navBar.style.display= 'block' 
     mainBody.style.overflowX='hidden'
  });
 
@@ -15,5 +15,5 @@ closeBar.addEventListener('click', () =>{
    menuBar.style.right = "-50px"
    menuBar.style.display='block'
    closeBar.style.display='none'
-   navBar.style.transform= 'translateX(100%)' 
+   navBar.style.display= 'none' 
 })
